@@ -7,6 +7,11 @@
     font-size: 62.5%;
   }
 
+  body {
+    background-color: #FFFEF9;
+  }
+
+
   .botaoConta {
     display: flex;
     justify-content: space-evenly;
@@ -40,6 +45,12 @@
     background-color: #0000008e!important;
   }
 
+  #logo {
+    width: 100px;
+    height: 100px;
+   
+}
+
   .container{
     display: flex;
     flex-direction: column;
@@ -50,22 +61,25 @@
     justify-content: center;
     max-width: 800px;
   }
-  img{
+  .headimage{
     object-fit: cover;
     width: 100%;
     margin-top: 3.2rem;
     border-radius: 6px;
-    box-shadow: 5px 5px 5px black;
+   
   }
   h2{
     text-align: center;
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 3rem;
   }
   .sobreNos{
     font-size: 1.6rem;
-    margin-top: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
     width: 70%;
   }
-  .background{
+  .CardColor{
     height: 300px;
     width: 100%;
     background-color: rgb(3, 84, 138);
@@ -209,8 +223,49 @@ h3 {
  
  /* navbar */
 
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.6rem;
+  background-color: #FFFEF9;
+}
+
+.formStyle{
+  height: 35px;
+  gap: 10px;
+
+}
+
+#search{
+  height: 100%;
+  font-size: 1.9rem;
+  font-weight: 100;
  
- .botaoConta {
+}
+
+#img{
+  max-height: 50px;
+  max-width: 70%;
+}
+
+.links {
+  font-size: 2rem;
+}
+
+
+#linkHome {
+  margin-left: 240px;
+}
+
+
+.botaoConta {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -242,4 +297,119 @@ h3 {
 .bg-dark {
   background-color: #0000008e!important;
 }
+
+
+.background {
+  background-image: url("./img/baner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+}
+
+/* Pedro */
+
+.textus {
+  margin-right: 200px;
+  text-align: center;
+ font-family: "Inter", sans-serif;
+  font-weight: 550;
+
+}
+
+.textus h3{
+  font-weight: 700;
+}
+
+footer {
+  background-color: #84D8D8;
+  color: #010040;
+  padding: 32px;
+ width: 100%;
  
+}
+
+.fotstyle {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin:  0 auto;
+
+}
+
+.senac {
+  width: 100px;
+ margin-right: 35px;
+ margin-top: 10px;
+ margin-left: 5px;
+}
+
+.governo {
+  width: 140px;
+  margin-right: 10px;
+
+ 
+}
+
+.prefeitura {
+  width: 115px;
+ 
+}
+
+.secultur {
+  width: 170px;
+  margin-top: 35px;
+  margin-left: 5px;
+ 
+}
+
+
+.face {
+  width: 50px;
+}
+
+.insta {
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.icones {
+
+  align-items: flex-end;
+  margin: 10px;
+}
+
+h3 {
+    text-align: center;
+  padding-bottom: none;
+}
+
+.pedro {
+     line-height: 10px;
+}
+
+@media (max-width: 768px) {
+
+ .footer-container {
+  flex-direction: column;
+  align-items: center;
+ }
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Hammersmith One", sans-serif;
+  margin-top: 50px;
+  color:  rgb(55, 167, 173);
+  
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+

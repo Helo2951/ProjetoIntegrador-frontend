@@ -1,3 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    background-color: #FFFEF9;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.formStyle{
+    height: 35px;
+    gap: 10px;
+
+}
+
+#search{
+    height: 100%;
+    font-size: 1.9rem;
+    font-weight: 100;
+   
+}
+
+#img{
+    max-height: 50px;
+    max-width: 70%;
+}
+  
+.links {
+    font-size: 2rem;
+}
+
+
+#linkHome {
+    margin-left: 240px;
+}
+
+
+.botaoConta {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 25px;
+  }
+  
+  .botaoConta button {
+    width: 100px;
+  }
+  
+  .navbar-nav, .d-flex {
+    display: flex;
+    margin: 0 !important;
+  }
+  
+  .navbar-nav {
+    gap: 15px;
+  }
+  
+  .navbar {
+    padding: 20px 0; 
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bg-dark {
+    background-color: #0000008e!important;
+  }
+  
+  #logo {
+    width: 100px;
+    height: 100px;
+   
+}
+
+h1 {
+    color: rgb(55, 167, 173);
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: "Hammersmith One", sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+text-align: justify;
+font-weight: 500;
+margin-bottom: 30px;
+}
+
+
+/* Form */
+
+h2 {
+    color: #002F51 ;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+    font-family: "Hammersmith One", sans-serif;
+}
+
 .buttons-container {
     display: flex;
     justify-content: center;
@@ -10,12 +122,14 @@
     height: 80vh;
     align-items: center;
     display: flex;
-    width: 70%;
+    flex-direction: column;
+    width: 50%;
     margin: 0 auto;
 }
 
 .btn-form {
     min-width: 150px;
+    font-size: 1.5rem;
 }
 
 .form-group {
@@ -33,11 +147,26 @@
 
 }
 
-/* footer */
 
-footer {
-    background-color: rgb(230, 223, 223);
-    margin-top: 30px;
+
+/* Pedro */
+
+.textus {
+    margin-right: 200px;
+    text-align: center;
+   font-family: "Inter", sans-serif;
+    font-weight: 550;
+
+}
+
+.textus h3{
+    font-weight: 700;
+}
+
+
+ footer {
+    background-color: #84D8D8;
+    color: #010040;
     padding: 32px;
    width: 100%;
    
@@ -46,53 +175,47 @@ footer {
 .fotstyle {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     margin:  0 auto;
 
 }
  
 .senac {
-    width: 50px;
+    width: 100px;
    margin-right: 35px;
+   margin-top: 10px;
+   margin-left: 5px;
 }
 
 .governo {
-    width: 70px;
+    width: 140px;
     margin-right: 10px;
+
    
 }
 
 .prefeitura {
-    width: 80px;
+    width: 115px;
    
 }
 
 .secultur {
-    width: 60px;
+    width: 170px;
+    margin-top: 35px;
+    margin-left: 5px;
    
 }
 
-.whats {
-    width: 30px;
-}
 
 .face {
-    width: 30px;
+    width: 50px;
 }
 
 .insta {
-    width: 30px;
+    width: 50px;
     margin-left: 10px;
     margin-right: 10px;
 }
-
-.parceiros {
-    
-    margin: 10px;
-    
-}
-
-
 
 .icones {
   
@@ -118,5 +241,4 @@ h3 {
 
     
     
-
 }

@@ -12,6 +12,19 @@ body{
   background-color: #FFFEF9;
 }
 
+body h1, body h2{
+   
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 400;
+  
+  
+}
+
+body p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
 .formStyle{
   height: 35px;
   gap: 10px;
@@ -25,8 +38,9 @@ body{
  
 }
 
-#img{
-  max-height: 50px;
+#img-login{
+   max-height: 50px;
+    max-width: 70%;
 }
 
 .links {
@@ -82,8 +96,23 @@ body{
     width: 100%;
 }
 
+#logo {
+  width: 100px;
+  height: 100px;
+ 
+}
+
 /* Contexto */
 
+  
+#img {
+  max-width: 50%;
+ 
+}
+#contexto-img {
+  max-height: 100%;
+  max-width: 100%;
+}
  
   #main {
       padding-top:20px ;
@@ -91,9 +120,13 @@ body{
    
   #main p {
       margin-top: 20px;
+      font-size: 2.3rem;
   }
-  
- 
+
+  #main h1{
+    text-align: left;
+    font-size: 3.5rem;
+  }
 
   /* Cards
  */
@@ -106,10 +139,11 @@ body{
 h1{
     color: rgb(55, 167, 173);
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 5rem;
     padding-bottom: 1rem;
     margin-top: 30px;
     margin-bottom: 30px;
+    
 }
 .tourismCard{
     width: 55%;
@@ -155,6 +189,7 @@ h1{
 
 
 
+
 @media(max-width:1024px){
     .tourismCard{
         width: 80%;
@@ -173,4 +208,98 @@ h1{
     .btn-info{
         margin-bottom: 1.7rem;
     }
+}
+
+/* Pedro */
+
+.textus {
+  margin-right: 200px;
+  text-align: center;
+ font-family: "Inter", sans-serif;
+  font-weight: 550;
+
+}
+
+.textus h3{
+  font-weight: 700;
+}
+
+footer {
+  background-color: #84D8D8;
+  color: #010040;
+  padding: 32px;
+ width: 100%;
+ 
+}
+
+.fotstyle {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin:  0 auto;
+
+}
+
+.senac {
+  width: 100px;
+ margin-right: 35px;
+ margin-top: 10px;
+ margin-left: 5px;
+}
+
+.governo {
+  width: 140px;
+  margin-right: 10px;
+
+ 
+}
+
+.prefeitura {
+  width: 115px;
+ 
+}
+
+.secultur {
+  width: 170px;
+  margin-top: 35px;
+  margin-left: 5px;
+ 
+}
+
+
+.face {
+  width: 50px;
+}
+
+.insta {
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.icones {
+
+  align-items: flex-end;
+  margin: 10px;
+}
+
+h3 {
+    text-align: center;
+  padding-bottom: none;
+}
+
+.pedro {
+     line-height: 10px;
+}
+
+@media (max-width: 768px) {
+
+ .footer-container {
+  flex-direction: column;
+  align-items: center;
+ }
+
+  
+  
+
 }
