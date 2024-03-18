@@ -1,0 +1,13 @@
+.imgcomentarios {
+    margin-bottom: 150px;
+
+}
+
+h2 {
+    margin: 20px;
+}
+
+.content{
+    display: grid;
+    align-items: center;
+}
