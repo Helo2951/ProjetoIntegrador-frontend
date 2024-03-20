@@ -7,12 +7,13 @@
 :root{
     font-size: 62.5%;
 }
-
 body{
     font-size: 1.6rem;
     background-color: #FFFEF9;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
-/* navbar */
 
 .formStyle{
     height: 35px;
@@ -20,7 +21,7 @@ body{
 
 }
 
-#search{
+#search, #searchButton{
     height: 100%;
     font-size: 1.9rem;
     font-weight: 100;
@@ -75,102 +76,79 @@ body{
     background-color: #0000008e!important;
   }
   
-
-  .background {
-      background-image: url("./img/baner.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 50vh;
-      width: 100%;
-  }
-
-#logo {
+  .logo {
     width: 100px;
     height: 100px;
    
 }
 
-
-/* conteudo */
-
-h1{
+h1 {
     color: rgb(55, 167, 173);
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     padding-bottom: 1rem;
     margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: "Hammersmith One", sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+text-align: justify;
+font-weight: 500;
+margin-bottom: 40px;
+}
+
+
+/* Form */
+
+h2 {
+    color: #002F51 ;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
     font-family: "Hammersmith One", sans-serif;
 }
-#content{
+
+
+
+.buttons-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    gap: 30px;
+    padding-top: 20px;
 }
 
-.carrouselcontainer {
-    width: 30%;
+
+.app {
+    height: 80vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     margin: 0 auto;
-    background-color: rgb(246, 246, 246);
-    margin-bottom: 2rem;
 }
 
-
-
-.carrouselcontainer img{
-    max-width: 630px;
-    height: 310px;
+.btn-form {
+    min-width: 150px;
+    font-size: 1.5rem;
 }
 
-#text {
+.form-group {
+
     display: flex;
-    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 100px;
+   padding-top: 1rem;
 }
 
- p {
-    
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-}
-#cardstyle{
-   width: 50%;
-}
-
-#comentarios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 100px;
-} 
-
-#comentcard {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-h3 {
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    text-align: start;
+.form-group label {
+    width: 80px;
+   
 
 }
 
-.comment {
-    padding: 20px;
-}
-.date {
-    color: grey;
-}
-
-h4 {
-    color: #84D8D8;
-}
 /* Pedro */
 
 .textus {
@@ -244,7 +222,10 @@ h4 {
     margin: 10px;
 }
 
-
+h3 {
+      text-align: center;
+    padding-bottom: none;
+}
 
 .pedro {
        line-height: 10px;
@@ -261,5 +242,3 @@ h4 {
     
 
 }
-
-

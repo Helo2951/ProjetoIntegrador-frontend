@@ -45,7 +45,7 @@
     background-color: #0000008e!important;
   }
 
-  #logo {
+  .logo {
     width: 100px;
     height: 100px;
    
@@ -243,7 +243,7 @@ body{
 
 }
 
-#search{
+#search, #searchButton{
   height: 100%;
   font-size: 1.9rem;
   font-weight: 100;

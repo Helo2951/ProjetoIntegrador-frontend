@@ -18,7 +18,7 @@ body{
 
 }
 
-#search{
+#search, #searchButton{
     height: 100%;
     font-size: 1.9rem;
     font-weight: 100;
@@ -83,7 +83,7 @@ body{
       width: 100%;
   }
 
-#logo {
+.logo {
     width: 100px;
     height: 100px;
    

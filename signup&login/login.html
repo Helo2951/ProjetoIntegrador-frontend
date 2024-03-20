@@ -35,37 +35,37 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">
-          <img src="./img/nova.png"   id="logo" alt="logo">
+          <img src="./img/nova.png"   class="logo" alt="logo">
         </a>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <a class="navbar-brand" href="#">
-              <img src="./img/nova.png"   id="logo" alt="logo">
+              <img src="./img/nova.png"   class="logo" alt="logo">
             </a>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 links">
               <li class="nav-item">
-                <a class="nav-link active"  id="linkHome" aria-current="page" href="http://127.0.0.1:5500/frontend/index.html">Home</a>
+                <a class="nav-link active"  id="linkHome" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/frontend/te.html">Turismo Ecológico</a>
+                <a class="nav-link active" aria-current="page" href="../pontos/te.html">Turismo Ecológico</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/frontend/th.html">Turismo Historico</a>
+                <a class="nav-link active" aria-current="page" href="../pontos/th.html">Turismo Historico</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/frontend/sobrenos.html">Quem Somos</a>
+                <a class="nav-link active" aria-current="page" href="../sobreNos/sobrenos.html">Quem Somos</a>
               </li>
             </ul>
             <form class="d-flex mt-3 formStyle" role="search">
               <input id="search" class="form-control me-2 inputSearch" type="search" placeholder="Pesquisar" aria-label="Search">
-              <button id="search" class="btn btn-success" type="submit">Search</button>
+              <button id="searchButton" class="btn btn-success" type="submit">Search</button>
             </form>
             <hr>
             <div class="botaoConta">
-              <a href="http://127.0.0.1:5500/frontend/signup.html">
+              <a href="../signup&login/signup.html">
                 <img id="img" src="./img/usuario.png" alt="login">
               </a>
             </div>
@@ -80,24 +80,15 @@
 
     <div class="app">
       <h1>Faça Parte!</h1>
-      <p>Ao se cadastrar no programa Guia Parnanguara você contruibui com  a experiência de todos, cadastre-se e deixe sua avaliação nos melhores pontos tuísticos de paranaguá!</p>
-        <div class="col-sm">
+           <div class="col-sm">
 
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
 
                     <form>
-                       <h2>Cadastre-se</h2>
-
                         <div class="form-group">
                             <label for="InputUser">Usuário</label>
                             <input type="text" class="form-control" id="InputUser" placeholder="Usuário">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="InputEmail">Email</label>
-                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
-                                placeholder="Email">
                         </div>
 
                         <div class="form-group">
@@ -105,14 +96,9 @@
                             <input type="password" class="form-control" id="InputPassword" placeholder="Senha">
                         </div>
 
-
                         <div class="buttons-container">
-                            <button type="button" id="createUser" class="btn btn-primary btn-form">Crie sua
-                                conta</button>
-                                <a href="http://127.0.0.1:5500/frontend/login.html">
-                             <button type="button" id="accessAccount" class="btn btn-primary btn-form">Login</button>
-                            </a>
-                     
+                           
+                            <button type="button" id="accessAccount" class="btn btn-primary btn-form">Login</button>
                         </div>
                     </form>
                 </div>
@@ -120,58 +106,62 @@
         </div>
     </div>
 
+
+           
     <footer>
-      <div class="fotstyle">
-        <div class="parceiros">
+      <footer>
+        <div class="fotstyle">
+          <div class="parceiros">
+                
+            <div>
+                <a href="https://www.parana.pr.gov.br/">
+                <img src="./img/governo-removebg-preview.png" alt="" class="governo">
+            </a>
+
+            <a href="https://www.paranagua.pr.gov.br/">
+            <img src="./img/prefeitura.png" alt="" class="prefeitura">
+            </a>
+
+            </div>
+
+            <div>
+                <a href="https://www.pr.senac.br/principal/index.asp">
+                <img src="./img/senac.png" alt="" class="senac">
+            </a>
+
+            <a href="https://secultur.paranagua.pr.gov.br/">
+                <img src="./img/secultur.png" alt="" class="secultur">
+            </a>
+            </div>
+        </div>
               
-          <div>
-              <a href="https://www.parana.pr.gov.br/">
-              <img src="./img/governo-removebg-preview.png" alt="" class="governo">
-          </a>
-
-          <a href="https://www.paranagua.pr.gov.br/">
-          <img src="./img/prefeitura.png" alt="" class="prefeitura">
-          </a>
-
-          </div>
-
-          <div>
-              <a href="https://www.pr.senac.br/principal/index.asp">
-              <img src="./img/senac.png" alt="" class="senac">
-          </a>
-
-          <a href="https://secultur.paranagua.pr.gov.br/">
-              <img src="./img/secultur.png" alt="" class="secultur">
-          </a>
-          </div>
-      </div>
-            
-            
-            <div class="textus">
-              <div class="atendimento">
-                <P>Para mais informações Secultur - Secretaria Municipal de Cultura e Turismo</P>
-                <h3>Horário de Atendimento:</h3>
-                <p class="pedro">Segunda-feira a Sexta-feira
-                </p>
-                <p class="pedro">06:00 às 18:00</p>
-                
-                
-                <div class="local">
-                  <h3>Localização:</h3>
-                  <p class="pedro">Rua: Júlia da Costa 322 - Centro Histórico
+              
+              <div class="textus">
+                <div class="atendimento">
+                  <P>Para mais informações Secultur - Secretaria Municipal de Cultura e Turismo</P>
+                  <h3>Horário de Atendimento:</h3>
+                  <p class="pedro">Segunda-feira a Sexta-feira
                   </p>
-                  <p class="pedro">CEP: 83203-060 - Paranaguá - PR</p>
+                  <p class="pedro">06:00 às 18:00</p>
+                  
+                  
+                  <div class="local">
+                    <h3>Localização:</h3>
+                    <p class="pedro">Rua: Júlia da Costa 322 - Centro Histórico
+                    </p>
+                    <p class="pedro">CEP: 83203-060 - Paranaguá - PR</p>
+                  </div>
                 </div>
               </div>
+              
+              
+              <div class="icones">
+                <img src="./img/insta.png" alt="" class="insta">
+                <img src="./img/face.png" alt="" class="face">
+              </div>
             </div>
-            
-            
-            <div class="icones">
-              <img src="./img/insta.png" alt="" class="insta">
-              <img src="./img/face.png" alt="" class="face">
-            </div>
-          </div>
-  </footer>
+    </footer>
+
 
 
 

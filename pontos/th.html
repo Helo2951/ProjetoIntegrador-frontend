@@ -8,13 +8,13 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="te.style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./te.style.css">
   </head>
   
   <body>
@@ -25,40 +25,40 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#">
-              <img src="./img/nova.png" id="logo" alt="logo">
+              <img src="./img/nova.png"   class="logo" alt="logo">
             </a>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
                 <a class="navbar-brand" href="#">
-                  <img src="./img/nova.png" id="logo" alt="logo">
+                  <img src="./img/nova.png"  class="logo" alt="logo">
                 </a>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 links">
                   <li class="nav-item">
-                    <a class="nav-link active"  id="linkHome" aria-current="page" href="http://127.0.0.1:5500/frontend/index.html">Home</a>
+                    <a class="nav-link active"  id="linkHome" aria-current="page" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/frontend/te.html">Turismo Ecológico</a>
+                    <a class="nav-link active" aria-current="page" href="../pontos/te.html">Turismo Ecológico</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/frontend/th.html">Turismo Historico</a>
+                    <a class="nav-link active" aria-current="page" href="../pontos/th.html">Turismo Historico</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/frontend/sobrenos.html">Quem Somos</a>
+                    <a class="nav-link active" aria-current="page" href="../sobreNos/sobrenos.html">Quem Somos</a>
                   </li>
                 </ul>
                 <form class="d-flex mt-3 formStyle" role="search">
                   <input id="search" class="form-control me-2 inputSearch" type="search" placeholder="Pesquisar" aria-label="Search">
-                  <button id="search" class="btn btn-success" type="submit">Search</button>
+                  <button id="searchButton" class="btn btn-success" type="submit">Search</button>
                 </form>
                 <hr>
                 <div class="botaoConta">
-                    <a href="http://127.0.0.1:5500/frontend/signup.html">
-                      <img id="img-login" src="./img/usuario.png" alt="login">
-                    </a>
-                  </div>
+                  <a href="../sobreNos/sobrenos.html">
+                    <img id="img-login" src="./img/usuario.png" alt="login">
+                  </a>
+                </div>
               </div>
               </div>            
             </div>
@@ -70,8 +70,8 @@
         <div id="contexto" class="container-fluid">
             <div class="container">
                 <div class="row">
-                  <div class="col-sm" id="left">
-                   <h1>O que é Turismo Ecológico?</h1>
+                  <div class="col-sm">
+                   <h1>O que é Turismo Histórico?</h1>
                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero aut officiis recusandae veritatis natus quam, fugiat iusto ea deleniti, amet consequatur nam autem nemo mollitia necessitatibus temporibus ad asperiores laudantium.</p>
                   </div>
                   <div  id="carangolas" class="col-sm">
@@ -216,29 +216,30 @@
 
     <footer>
         <div class="fotstyle">
-            <div class="parceiros">
+            
+                <div class="parceiros">
                 
-                <div>
-                    <a href="https://www.parana.pr.gov.br/">
-                    <img src="./img/governo-removebg-preview.png" alt="" class="governo">
-                </a>
-
-                <a href="https://www.paranagua.pr.gov.br/">
-                <img src="./img/prefeitura.png" alt="" class="prefeitura">
-                </a>
-
+                    <div>
+                        <a href="https://www.parana.pr.gov.br/">
+                        <img src="./img/governo-removebg-preview.png" alt="" class="governo">
+                    </a>
+    
+                    <a href="https://www.paranagua.pr.gov.br/">
+                    <img src="./img/prefeitura.png" alt="" class="prefeitura">
+                    </a>
+    
+                    </div>
+    
+                    <div>
+                        <a href="https://www.pr.senac.br/principal/index.asp">
+                        <img src="./img/senac.png" alt="" class="senac">
+                    </a>
+    
+                    <a href="https://secultur.paranagua.pr.gov.br/">
+                        <img src="./img/secultur.png" alt="" class="secultur">
+                    </a>
+                    </div>
                 </div>
-
-                <div>
-                    <a href="https://www.pr.senac.br/principal/index.asp">
-                    <img src="./img/senac.png" alt="" class="senac">
-                </a>
-
-                <a href="https://secultur.paranagua.pr.gov.br/">
-                    <img src="./img/secultur.png" alt="" class="secultur">
-                </a>
-                </div>
-            </div>
 
 
             <div class="textus">
@@ -252,11 +253,12 @@
 
                 <div class="local">
                     <h3>Localização:</h3>
-                    <p class="pedro">Rua: Júlia da Costa 322 - Centro Histórico
+                    <p class="pedro">Av. Arthur de Abreu, 44 - Costeira, 
                     </p>
-                    <p class="pedro">CEP: 83203-060 - Paranaguá - PR</p>
+                    <p class="pedro"> CEP: 83203-210 Paranaguá - PR, </p>
                 </div>
             </div>
+
 
 
             <div class="icones">
