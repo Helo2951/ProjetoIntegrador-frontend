@@ -56,6 +56,6 @@ introducao.innerHTML = `
 </section>
 
 <div class="ratingMedia">
-<div class="Stars" id="mediaStars"  style="--rating: ${points.mediaRating};" aria-label="Rating of this product is 2.3 out of 5.">
+<div class="Stars" id="mediaStars"  style="--rating: ${points.mediaRating};" aria-label="">
 </div>
 `
