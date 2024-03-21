@@ -1,288 +1,289 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    font-size: 62.5%;
+:root {
+  font-size: 62.5%;
 }
 
-body{
-    font-size: 1.6rem;
-    background-color: #FFFEF9;
+body {
+  font-size: 1.6rem;
+  background-color: #fffef9;
 }
 /* navbar */
 
-.formStyle{
-    height: 35px;
-    gap: 10px;
-
+.formStyle {
+  height: 35px;
+  gap: 10px;
 }
 
-#search, #searchButton{
-    height: 100%;
-    font-size: 1.9rem;
-    font-weight: 100;
-   
+#search,
+#searchButton {
+  height: 100%;
+  font-size: 1.9rem;
+  font-weight: 100;
 }
 
-#img{
-    max-height: 50px;
-    max-width: 70%;
+#img {
+  max-height: 50px;
+  max-width: 70%;
 }
-  
+
 .links {
-    font-size: 2rem;
+  font-size: 2rem;
 }
-
 
 #linkHome {
-    margin-left: 240px;
+  margin-left: 240px;
 }
-
 
 .botaoConta {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 25px;
-  }
-  
-  .botaoConta button {
-    width: 100px;
-  }
-  
-  .navbar-nav, .d-flex {
-    display: flex;
-    margin: 0 !important;
-  }
-  
-  .navbar-nav {
-    gap: 15px;
-  }
-  
-  .navbar {
-    padding: 20px 0; 
-  }
-  
-  .nav-item {
-    display: flex;
-    align-items: center;
-  }
-  
-  .bg-dark {
-    background-color: #0000008e!important;
-  }
-  
-
-  .background {
-      background-image: url("./img/baner.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 50vh;
-      width: 100%;
-  }
-
-.logo {
-    width: 100px;
-    height: 100px;
-   
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 25px;
 }
 
+.botaoConta button {
+  width: 100px;
+}
+
+.navbar-nav,
+.d-flex {
+  display: flex;
+  margin: 0 !important;
+}
+
+.navbar-nav {
+  gap: 15px;
+}
+
+.navbar {
+  padding: 20px 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.bg-dark {
+  background-color: #0000008e !important;
+}
+
+.background {
+  background-image: url("./img/baner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
 
 /* conteudo */
 
-h1{
-    color: rgb(55, 167, 173);
-    text-align: center;
-    font-size: 5rem;
-    padding-bottom: 1rem;
-    margin-top: 30px;
-    font-family: "Hammersmith One", sans-serif;
+h1 {
+  color: rgb(55, 167, 173);
+  text-align: center;
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-top: 30px;
+  font-family: "Hammersmith One", sans-serif;
 }
-#content{
-    display: flex;
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.carrouselcontainer {
+  width: 30%;
+  margin: 0 auto;
+  background-color: rgb(246, 246, 246);
+  margin-bottom: 2rem;
+}
+
+.carrouselcontainer img {
+  max-width: 630px;
+  height: 310px;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+#cardstyle {
+  width: 50%;
+}
+
+#comentarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+#comentcard {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-align: start;
+}
+
+.comment {
+  padding: 20px;
+}
+.date {
+  color: grey;
+}
+
+h4 {
+  color: #84d8d8;
+}
+/* Pedro */
+
+.textus {
+  margin-right: 200px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 550;
+}
+
+.textus h3 {
+  font-weight: 700;
+}
+
+footer {
+  background-color: #84d8d8;
+  color: #010040;
+  padding: 32px;
+  width: 100%;
+}
+
+.fotstyle {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.senac {
+  width: 100px;
+  margin-right: 35px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.governo {
+  width: 140px;
+  margin-right: 10px;
+}
+
+.prefeitura {
+  width: 115px;
+}
+
+.secultur {
+  width: 170px;
+  margin-top: 35px;
+  margin-left: 5px;
+}
+
+.face {
+  width: 50px;
+}
+
+.insta {
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.icones {
+  align-items: flex-end;
+  margin: 10px;
+}
+
+.pedro {
+  line-height: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
     flex-direction: column;
+    align-items: center;
+  }
+}
+
+:root {
+  --star-size: 60px;
+  --star-color: #fff;
+  --star-background: #fc0;
+}
+
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times; /*make sure ★ appears correctly*/
+  line-height: 1;
+
+  &::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    background: linear-gradient(
+      90deg,
+      var(--star-background) var(--percent),
+      var(--star-color) var(--percent)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.numeroRating {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.ratingMedia {
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.carrouselcontainer {
-    width: 30%;
-    margin: 0 auto;
-    background-color: rgb(246, 246, 246);
-    margin-bottom: 2rem;
+.starsWidth {
+    font-size: 25px;
+    height: 1px;
 }
 
-
-
-.carrouselcontainer img{
-    max-width: 630px;
-    height: 310px;
-}
-
-#text {
+.ratingMedia1 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 15px;
 }
-
- p {
-    
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-}
-#cardstyle{
-   width: 50%;
-}
-
-#comentarios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 100px;
-} 
-
-#comentcard {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-h3 {
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    text-align: start;
-
-}
-
-.comment {
-    padding: 20px;
-}
-.date {
-    color: grey;
-}
-
-h4 {
-    color: #84D8D8;
-}
-/* Pedro */
-
-.textus {
-    margin-right: 200px;
-    text-align: center;
-   font-family: "Inter", sans-serif;
-    font-weight: 550;
-
-}
-
-.textus h3{
-    font-weight: 700;
-}
-
- footer {
-    background-color: #84D8D8;
-    color: #010040;
-    padding: 32px;
-   width: 100%;
-   
-}
-
-.fotstyle {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin:  0 auto;
-
-}
- 
-.senac {
-    width: 100px;
-   margin-right: 35px;
-   margin-top: 10px;
-   margin-left: 5px;
-}
-
-.governo {
-    width: 140px;
-    margin-right: 10px;
-
-   
-}
-
-.prefeitura {
-    width: 115px;
-   
-}
-
-.secultur {
-    width: 170px;
-    margin-top: 35px;
-    margin-left: 5px;
-   
-}
-
-
-.face {
-    width: 50px;
-}
-
-.insta {
-    width: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.icones {
-  
-    align-items: flex-end;
-    margin: 10px;
-}
-
-
-
-.pedro {
-       line-height: 10px;
-}
-
-@media (max-width: 768px) {
-
-   .footer-container {
-    flex-direction: column;
-    align-items: center;
-   }
-
-    
-    
-
-}
-
-:root {
-    --star-size: 60px;
-    --star-color: #fff;
-    --star-background: #fc0;
-  }
- 
-  .Stars {
-    --percent: calc(var(--rating) / 5 * 100%);
-   
-    display: inline-block;
-    font-size: var(--star-size);
-    font-family: Times;  /*make sure ★ appears correctly*/
-    line-height: 1;
-   
-    &::before {
-      content: '★★★★★';
-      letter-spacing: 3px;
-      background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-
-
