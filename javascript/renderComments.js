@@ -8,54 +8,181 @@ if (introducao){
   const [points] = await getPoints(id);
   const comments = await getComments(id);
   
-  introducao.innerHTML = `
-  <section id="content">
-    <h1>${points.name}</h1>
-    <h2>${points.location}</h2>
-    <div class="carrouselcontainer">
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../img/baner.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/baner.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/baner.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-  <section id="text">
-    <div id="cardstyle" class="card">
-      <div class="card-header">
-        <h2>Sobre</h2>
-      </div>
-      <div class="card-body">
-        <p class="card-text">${points.description}</p>
-      </div>
-    </div>
-  </section>
-  <div class="ratingMedia">
-    <p class="numeroRating">${points.mediaRating}</p>
-    <div class="Stars" id="mediaStars"  style="--rating: ${points.mediaRating};" aria-label=""></div>
-  </div>
-  `;
+  async function renderContent() {
+
+    function list(points) {
+      const section = document.createElement('section');
+      section.setAttribute('id','content')
+
+      const title = document.createElement('h1')
+      title.textContent = points.name;
+
+      const location = document.createElement('h2')
+      location.textContent = points.location;
+
+      const imgs = getImages(points.id);
+      const pointsCard = document.createElement('div');
+      pointsCard.classList.add('tourismCard');
+      
+      const carouselExampleIndicators = document.createElement('div')
+      carouselExampleIndicators.setAttribute('id',`carouselExampleIndicators`)
+      carouselExampleIndicators.classList.add('carousel')
+      carouselExampleIndicators.classList.add('slide')
+  
+      const carouselIndicators = document.createElement('div')
+      carouselIndicators.classList.add('carousel-indicators')
+  
+      const button1 = document.createElement('button')
+      button1.setAttribute('type','button')
+      button1.setAttribute('data-bs-target',`#carouselExampleIndicators`)
+      button1.setAttribute('data-bs-slide-to','0')
+      button1.setAttribute('class','active')
+      button1.setAttribute('aria-current','true')
+      button1.setAttribute('aria-label','Slide 1')
+  
+      const button2 = document.createElement('button')
+      button2.setAttribute('type','button')
+      button2.setAttribute('data-bs-target',`#carouselExampleIndicators`)
+      button2.setAttribute('data-bs-slide-to','1')
+      button2.setAttribute('aria-label','Slide 2')
+  
+      const button3 = document.createElement('button')
+      button3.setAttribute('type','button')
+      button3.setAttribute('data-bs-target',`#carouselExampleIndicators`)
+      button3.setAttribute('data-bs-slide-to','2')
+      button3.setAttribute('aria-label','Slide 3')
+  
+      const carouselInner = document.createElement('div')
+      carouselInner.classList.add('carousel-inner')
+  
+      const carouselItem1 = document.createElement('div')
+      carouselItem1.classList.add('carousel-item')
+      carouselItem1.classList.add('active')
+  
+      const img1 = document.createElement('img')
+      imgs.then(data => {
+        img1.setAttribute('src', data[0].link_image)
+      })
+      img1.setAttribute('class','d-block w-100')
+      img1.setAttribute('alt','...')
+  
+      const carouselItem2 = document.createElement('div')
+      carouselItem2.classList.add('carousel-item')
+  
+      const img2 = document.createElement('img')
+      imgs.then(data => {
+        img2.setAttribute('src', data[1].link_image)
+      })
+      img2.setAttribute('class','d-block w-100')
+      img2.setAttribute('alt','...')
+  
+      const carouselItem3 = document.createElement('div')
+      carouselItem3.classList.add('carousel-item')
+  
+      const img3 = document.createElement('img')
+      imgs.then(data => {
+        img3.setAttribute('src', data[2].link_image)
+      })
+      img3.setAttribute('class','d-block w-100')
+      img3.setAttribute('alt','...')
+  
+      const carouselControlPrev = document.createElement('button')
+      carouselControlPrev.setAttribute('class','carousel-control-prev')
+      carouselControlPrev.setAttribute('type','button')
+      carouselControlPrev.setAttribute('data-bs-target',`#carouselExampleIndicators`)
+      carouselControlPrev.setAttribute('data-bs-slide','prev')
+  
+      const carouselControlPrevicon = document.createElement('span')
+      carouselControlPrevicon.setAttribute('class','carousel-control-prev-icon')
+      carouselControlPrevicon.setAttribute('aria-hidden','true')
+  
+      const visuallyHidden1 = document.createElement('span')
+      visuallyHidden1.setAttribute('class','visually-hidden')
+      visuallyHidden1.textContent = 'Previous'
+      
+      const carouselControlNext = document.createElement('button')
+      carouselControlNext.setAttribute('class','carousel-control-next')
+      carouselControlNext.setAttribute('type','button')
+      carouselControlNext.setAttribute('data-bs-target',`#carouselExampleIndicators`)
+      carouselControlNext.setAttribute('data-bs-slide','next')
+      
+      const carouselControlNexticon = document.createElement('span')
+      carouselControlNexticon.setAttribute('class','carousel-control-next-icon')
+      carouselControlNexticon.setAttribute('aria-hidden','true')
+  
+      const visuallyHidden = document.createElement('span')
+      visuallyHidden.setAttribute('class','visually-hidden')
+      visuallyHidden.textContent = 'Next'
+
+      const section1 = document.createElement('div')
+      section1.setAttribute('id','text')
+
+      const cardstyle = document.createElement('div')
+      cardstyle.classList.add('card')
+      cardstyle.setAttribute('id','cardstyle')
+
+      const cardHeader = document.createElement('div')
+      cardHeader.classList.add('card-header')
+
+      const h2 = document.createElement('h2')
+      h2.textContent = 'Sobre';
+
+      const cardBody = document.createElement('div')
+      cardBody.classList.add('card-body')
+
+      const cardText = document.createElement('p')
+      cardText.classList.add('card-text')
+      cardText.textContent = points.description;
+
+      const cardFooter = document.createElement('div')
+      cardFooter.classList.add('card-footer')
+
+      const numeroRating = document.createElement('p')
+      numeroRating.classList.add('numeroRating')
+      numeroRating.textContent = points.mediaRating;
+
+      const mediaStars = document.createElement('div')
+      mediaStars.classList.add('Stars')
+      mediaStars.setAttribute('id','mediaStars')
+      mediaStars.setAttribute('style', `--rating: ${points.mediaRating};`);
+      mediaStars.setAttribute('aria-label', '');
+      
+      section.appendChild(title)
+      section.appendChild(location)
+      section.appendChild(carouselExampleIndicators)
+      carouselExampleIndicators.appendChild(carouselIndicators)
+      carouselIndicators.appendChild(button1)
+      carouselIndicators.appendChild(button2)
+      carouselIndicators.appendChild(button3)
+      carouselExampleIndicators.appendChild(carouselInner)
+      carouselInner.appendChild(carouselItem1)
+      carouselItem1.appendChild(img1)
+      carouselInner.appendChild(carouselItem2)
+      carouselItem2.appendChild(img2)
+      carouselInner.appendChild(carouselItem3)
+      carouselItem3.appendChild(img3)
+      carouselExampleIndicators.appendChild(carouselControlPrev)
+      carouselControlPrev.appendChild(carouselControlPrevicon)
+      carouselControlPrev.appendChild(visuallyHidden1)
+      carouselExampleIndicators.appendChild(carouselControlNext)
+      carouselControlNext.appendChild(carouselControlNexticon)
+      carouselControlNext.appendChild(visuallyHidden)
+      section1.appendChild(cardstyle)
+      cardstyle.appendChild(cardHeader)
+      cardHeader.appendChild(h2)
+      cardstyle.appendChild(cardBody)
+      cardBody.appendChild(cardText)
+      cardstyle.appendChild(cardFooter)
+      cardFooter.appendChild(numeroRating)
+      cardFooter.appendChild(mediaStars)
+      section.appendChild(section1)
+
+      return section
+    }
+
+    introducao.innerHTML = ''
+    introducao.appendChild(list(points))
+  }
   
   const comentcard = document.getElementById('comentcard')
   
@@ -107,7 +234,7 @@ if (introducao){
     });
   
   }
-  
+  renderContent();
   renderComments();
 }
 
