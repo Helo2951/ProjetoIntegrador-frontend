@@ -10,7 +10,7 @@
 
 body {
   font-size: 1.6rem;
-  background-color: #fffef9;
+  background-color: #f7f6f2;
 }
 /* navbar */
 
@@ -22,6 +22,7 @@ body {
 .w-100 {
   max-width: 640px !important;
 }
+  
 
 #search,
 #searchButton {
@@ -39,8 +40,17 @@ body {
   font-size: 2rem;
 }
 
-#linkHome {
-  margin-left: 240px;
+.navbar-nav a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 100;
+  color: #000000;
+  margin: 0 25px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .botaoConta {
@@ -74,7 +84,7 @@ body {
 }
 
 .bg-dark {
-  background-color: #0000008e !important;
+  background-color: #000000c8 !important;
 }
 
 .background {
@@ -106,7 +116,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 50px 25%;
 }
 
 .carrouselcontainer {
@@ -127,14 +137,12 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 p {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-}
-#cardstyle {
-  width: 50%;
 }
 
 #comentarios {

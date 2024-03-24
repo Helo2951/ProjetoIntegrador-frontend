@@ -350,7 +350,7 @@ export async function renderPoints() {
     aLink.setAttribute('href', '../comentarios/comentarios.html')
 
     const botao = document.createElement('button')
-    botao.setAttribute('class','btn btn-primary')
+    botao.setAttribute('class','btn btn-info')
     botao.setAttribute('type','button')
     botao.textContent = 'Saiba Mais'
     botao.onclick = () => {
@@ -385,6 +385,7 @@ export async function renderPoints() {
     cardContent.appendChild(conteudo)
     cardContent.appendChild(aLink)
     aLink.appendChild(botao)
+    botao.appendChild(icon)
     
     return pointsCard;
   }
