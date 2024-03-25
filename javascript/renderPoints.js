@@ -107,7 +107,7 @@ export async function renderPoints() {
       titulo.textContent = AllPoints.name
   
       const conteudo = document.createElement('p')
-      conteudo.textContent = AllPoints.description
+      conteudo.textContent = AllPoints.summary
   
       const aLink = document.createElement('a')
       aLink.setAttribute('href', '../comentarios/comentarios.html')
