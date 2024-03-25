@@ -111,18 +111,6 @@
                   >
                 </li>
               </ul>
-              <form class="d-flex mt-3 formStyle" role="search">
-                <input
-                  id="search"
-                  class="form-control me-2 inputSearch"
-                  type="search"
-                  placeholder="Pesquisar"
-                  aria-label="Search"
-                />
-                <button id="searchButton" class="btn btn-success" type="submit">
-                  Search
-                </button>
-              </form>
               <hr />
               <div class="botaoConta">
                 <a href="../signup&login/signup.html">
@@ -145,7 +133,39 @@
           <div id="comentcard" class="card-body">
             
           </div>
+          <form>
+            <div class="card-star">
+              <span onclick="gfg(1)"
+                    class="star">★
+              </span>
+              <span onclick="gfg(2)"
+                    class="star">★
+              </span>
+              <span onclick="gfg(3)"
+                    class="star">★
+              </span>
+              <span onclick="gfg(4)"
+                    class="star">★
+              </span>
+              <span onclick="gfg(5)"
+                    class="star">★
+              </span>
+              <h3 id="output">
+                    Rating is: 0/5
+                </h3>
+            <div class="mb-3">
+              <label for="InputTitle" class="form-label">Titulo</label>
+              <input type="title" class="form-control" id="InputTitle" >
+            </div>
+            <div class="mb-3">
+              <label for="CommentArea" class="form-label">Deixe Seu Comentário</label>
+              <textarea class="form-control" id="CommentArea" rows="3"></textarea>
+            </div>
+            <button type="" class="btn btn-primary btn-lg">Enviar</button>
+          </form>
         </div>
+      </div>
+
        </section> 
         
       <footer>
@@ -213,6 +233,7 @@
         crossorigin="anonymous"
       ></script>
       <script type="module" src="../javascript/renderComments.js"></script>
+      <script src="../javascript/stars.js"></script>
     </div>
   </body>
 </html>

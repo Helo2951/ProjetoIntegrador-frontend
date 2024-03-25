@@ -110,13 +110,6 @@ body {
   height: 60px;
   color: #32c3cc;
 }
-
-@media (min-width: 950px) {
-  #linkHome {
-    margin-left: 240px;
-  }
-}
-
 /* Cards
  */
 

@@ -88,11 +88,10 @@ body p {
 
 
 .background {
-    background-image: url("./img/baner.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 50vh;
+    height: 18vh;
     width: 100%;
 }
 
@@ -112,6 +111,11 @@ body p {
 #contexto-img {
   max-height: 100%;
   max-width: 100%;
+  margin-top: 7rem;
+}
+
+.texto-inicio{
+  text-align: justify;
 }
  
   #main {
@@ -177,18 +181,9 @@ h1{
 .cardContent button{
     font-size: 1.9rem;
     margin-bottom: 1.7rem;
-    background-color: #012F66;
     border: none;
 
 }
-
-.cardContent button:hover   {
-    background-color: #012F66;
-    border: none;
-}
-
-
-
 
 @media(max-width:1024px){
     .tourismCard{

@@ -31,6 +31,12 @@ body {
   font-weight: 100;
 }
 
+
+.local h3,
+.atendimento h3{
+  align-items: center;
+}
+
 img{
   margin-top: 2rem;
   -webkit-box-shadow: -2px 0px 22px -5px rgba(0, 0, 0, 0.2);
@@ -191,6 +197,7 @@ h4 {
 /* Pedro */
 
 .textus {
+
   margin-right: 200px;
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -198,6 +205,8 @@ h4 {
 }
 
 .textus h3 {
+  display: flex;
+  justify-content: center;
   font-weight: 700;
 }
 
@@ -312,4 +321,39 @@ footer {
 .ratingMedia1 {
     display: flex;
     margin-bottom: 15px;
+}
+
+.card-star{
+  /* max-width: 33rem; */
+  background: #fff;
+  margin: 1rem   1rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 97.6%;
+  border-radius: 0.5rem;
+}
+ 
+.star {
+  font-size: 5vh;
+  cursor: pointer;
+}
+ 
+.one {
+  color: rgb(255, 0, 0);
+}
+ 
+.two {
+  color: rgb(255, 106, 0);
+}
+ 
+.three {
+  color: rgb(251, 255, 120);
+}
+ 
+.four {
+  color: rgb(255, 255, 0);
+}
+ 
+.five {
+  color: rgb(24, 159, 14);
 }
